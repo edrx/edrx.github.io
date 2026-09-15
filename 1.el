@@ -7,6 +7,7 @@
 ;; (find-esvg "esvg-xy.el")
 
 (defun _esvg-arrow/theta (x0 y0 l1x l1y) (atan (- l1y y0) (- l1x x0)))
+(defun _esvg-arrow/theta (x0 y0 x1 y1) (atan (- y1 y0) (- x1 x0)))
 ; (_esvg-arrow/theta 0 0 10 10)
 
 (defun _esvg-arrow/p1    (l1x l1y dx dy theta)
